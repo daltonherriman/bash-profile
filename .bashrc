@@ -137,5 +137,10 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-PS1="$(tput setaf 183)\u $(tput setaf 15)at $(tput setaf 51)\h $(tput setaf 15)in $(tput setaf 206)\W\n$(tput setaf 226)->$(tput setaf 15) ";
+PS1="\n\n"
+PS1+="$(tput setaf 183)\u "
+PS1+="$(tput setaf 15)at "
+PS1+="$(tput setaf 51)\h "
+PS1+="$(tput setaf 15)in "
+PS1+="$(tput setaf 206)\W\n$(tput setaf 226)->$(tput setaf 15) "
 export PS1;
